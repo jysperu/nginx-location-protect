@@ -5,8 +5,13 @@
 ## Suggested use
 
 Add the log_format in http directive
+
 ```
 log_format hacker '$remote_addr [$time_local] $http_host $request $status $scheme "$http_referer" $http_user_agent';
 ```
 
 Install a crontab to get the automatic updates
+
+```
+0 0 * * * wget -O /etc/nginx/default.d/security.conf https://raw.githubusercontent.com/jysperu/nginx-location-protect/main/security.conf
+```
