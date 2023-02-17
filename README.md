@@ -26,5 +26,5 @@ return 200 "Fck u hacker";
 Install a crontab to get the automatic updates
 
 ```
-0 0 * * * wget -O /etc/nginx/default.d/security.conf https://raw.githubusercontent.com/jysperu/nginx-location-protect/main/security.conf
+0 0 * * * wget -O /etc/nginx/default.d/security.conf https://raw.githubusercontent.com/jysperu/nginx-location-protect/main/security.conf && nginx -s reload
 ```
